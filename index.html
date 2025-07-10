@@ -3,58 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AkademNashr</title>
-    <!-- Css -->
+    <title>Akademnashr</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Akademnashr" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header" style="display: none">
-      <div class="container header-container">
-        <div class="menu-icon-device"></div>
-        <a
-          class="header-logo"
-          href="./index.html"
-          data-aos="fade-left"
-          data-aos-duration="1200"
-        >
-          <img
-            src="./images/akademnashr-logo.svg"
-            alt="AkademNashr Logo"
-            class="header-icon"
-            width="227"
-            height="60"
-          />
-        </a>
-
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container" data-aos="fade-right">
+        <img
+          class="logo"
+          src="./images/akademnashr-logo.svg"
+          alt=""
+          data-aos="fade-up-right"
+          data-aos-duration="900"
+        />
         <!-- LINKS -->
-        <div
-          class="header-links-wrapper"
-          data-aos="fade-right"
-          data-aos-duration="1200"
-        >
-          <nav class="header-nav">
-            <ul class="header-links">
-              <li>
-                <a class="header-link" id="active" href="#">Bosh sahifa</a>
-              </li>
-              <li><a class="header-link" href="#why">Kitoblar</a></li>
-              <li><a class="header-link" href="#cta">Aksiyalar</a></li>
-              <li><a class="header-link" href="#footer">Kontaktlar</a></li>
-            </ul>
-          </nav>
-          <a class="orange-button device" href="#">Ro'yhatdan o'tish</a>
+        <div class="header-links-wrapper">
+          <ul class="heade-links">
+            <li
+              class="b-sahifa"
+              data-aos="fade-up-right"
+              data-aos-duration="300"
+            >
+              <a href="#">BOSH SAHIFA</a>
+            </li>
+            <li data-aos="fade-up-right" data-aos-duration="500">
+              <a href="#">KITOBLAR</a>
+            </li>
+            <li data-aos="fade-up-left" data-aos-duration="700">
+              <a href="#">AKSIYALAR</a>
+            </li>
+            <li data-aos="fade-up-left" data-aos-duration="900">
+              <a href="#">KONTAKTLAR</a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="orange-button none-botton"
+            data-aos="fade-up-left"
+            data-aos-duration="900"
+            >Ro’yxatdan o’tish</a
+          >
         </div>
         <svg
           class="burger-menu"
-          width="32"
-          height="32"
           viewBox="0 0 15 15"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            class="burger-menu"
             d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
             fill="currentColor"
             fill-rule="evenodd"
@@ -63,251 +68,308 @@
         </svg>
       </div>
     </header>
-
-    <!-- Main -->
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container hero-container">
-          <div
-            class="hero-content"
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <img
+            src="./images/"
+            alt=""
             data-aos="fade-right"
-            data-aos-duration="1500"
-          >
-            <img src="./images/hero-line.svg" alt="Hero line" />
-            <h2 class="hero-title">Pythonda dasturlash asoslari</h2>
-            <p class="hero-text">
-              Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal
-              qo‘llanma. Kitobning har bir bo‘limi uchun maxsus video darslar
-              yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish
-              mumkin.
-            </p>
-            <a class="orange-button-hero" href="#"> Buyurtma berish </a>
-          </div>
-          <img
-            class="hero-img"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-            src="./images/python-book@2x.jpg"
-            alt="Python Book"
-            width="510"
-            height="510"
+            data-aos-duration="150"
           />
-        </div>
-      </section>
-
-      <!-- Nega aynan AkademNashr? -->
-      <section class="why" id="why" style="display: none">
-        <div class="container">
-          <h1 class="why-title" data-aos="flip-left" data-aos-duration="1200">
-            Nega aynan AkademNashr?
-          </h1>
-          <!-- Cards -->
-          <ul class="cards">
-            <li class="card" data-aos="fade-up-left" data-aos-duration="1200">
-              <span class="circle">
-                <img src="./images/cursor.svg" alt="Oson Buyurtma Qilish" />
-              </span>
-              <h3 class="card-title">Oson buyurtma qilish</h3>
-              <p class="card-text">
-                Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda
-                buyurtma qila olasiz.
-              </p>
-            </li>
-            <li class="card" data-aos="fade-up" data-aos-duration="1200">
-              <span class="circle">
-                <img src="./images/star.svg" alt="Eng sara kitoblar" />
-              </span>
-              <h3 class="card-title">Eng sara kitoblar</h3>
-              <p class="card-text">
-                Trenddagi eng ommabop, turli auditoriyalarga mo’ljallangan har
-                xil janrdagi kitoblarni topa olasiz.
-              </p>
-            </li>
-            <li class="card" data-aos="fade-up-right" data-aos-duration="1200">
-              <span class="circle">
-                <img
-                  src="./images/lightning-bolt.svg"
-                  alt="Tez yetkazib berish"
-                />
-              </span>
-              <h3 class="card-title">Tez yetkazib berish</h3>
-              <p class="card-text">
-                O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro
-                buyurtmalarni 10 ish kuni ichida yetkazib beriladi.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CTA -->
-
-      <section
-        style="display: none"
-        class="cta container"
-        id="cta"
-        data-aos="flip-up"
-        data-aos-duration="1200"
-      >
-        <!-- content -->
-        <div class="cta-container">
-          <div class="cta-content">
-            <h2 class="cta-title">Bolalar kitoblari uchun ajoyib aksiya!</h2>
-            <p class="cta-text2">
-              Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun
-              turli mashq qo’llanmalari va komikslar.
+          <div class="text">
+            <h2 class="hero-h" data-aos="fade-right" data-aos-duration="300">
+              Pythonda dasturlash <br /><br />
+              asoslari
+            </h2>
+            <p class="hero-text" data-aos="fade-right" data-aos-duration="600">
+              Dasturlash asoslariga oid o‘zbek tilidagi ilk eng <br />
+              mukammal qo‘llanma. Kitobning har bir bo‘limi <br />
+              uchun maxsus video darslar yozilgan bo‘lib, ularga <br />
+              kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.
             </p>
-            <p class="cta-text">
-              Aksiyadagi eng katta to’plamda
-              <strong class="orange-text">50 ta kitob</strong>ni
-              <strong class="orange-text"> 350 ming </strong> so’mga (aslida 383
-              ming so’m) sotib olishingiz mumkin.
-            </p>
-            <a class="orange-button device-button" href="#">Buyurtma berish</a>
+            <a
+              href="#"
+              class="orange-button none2-button"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              >Buyurtma berish</a
+            >
           </div>
-          <img
-            class="cta-img"
-            src="./images/sale-img (1).jpg"
-            alt="Sale img"
-            width="440"
-            height="440"
-          />
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer style="display: none" class="footer" id="footer">
+        <img
+          class="hero-img"
+          src="./images/python-book@2x.jpg"
+          alt="python-book"
+          data-aos="flip-down"
+          data-aos-duration="900"
+        />
+      </div>
+    </section>
+    <!-- MAIN -->
+    <main class="main">
       <div class="container">
-        <!-- TOP -->
-        <div class="footer-top">
-          <!-- Logo -->
-          <a class="footer-logo" href="./index.html">
-            <img
-              class="footer-img-device"
-              src="./device/768/mini-device-icon.svg"
-              alt=""
-            />
-
-            <img
-              class="footer-img-link"
-              src="./images/akademnashr-logo.svg"
-              alt="AkademNashr"
-              width="227"
-              height="60"
-            />
-          </a>
-
-          <!-- Socials -->
-
-          <ul class="socials">
-            <li>
-              <a href="#">
-                <svg
-                  class="footer-img"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM17.568 8.16C17.388 10.056 16.608 14.664 16.212 16.788C16.044 17.688 15.708 17.988 15.396 18.024C14.7 18.084 14.172 17.568 13.5 17.124C12.444 16.428 11.844 15.996 10.824 15.324C9.636 14.544 10.404 14.112 11.088 13.416C11.268 13.236 14.34 10.44 14.4 10.188C14.412 10.152 14.412 10.044 14.34 9.972C14.268 9.912 14.172 9.936 14.088 9.948C13.98 9.972 12.3 11.088 9.024 13.296C8.544 13.62 8.112 13.788 7.728 13.776C7.296 13.764 6.48 13.536 5.868 13.332C5.112 13.092 4.524 12.96 4.572 12.54C4.596 12.324 4.896 12.108 5.46 11.88C8.964 10.356 11.292 9.348 12.456 8.868C15.792 7.476 16.476 7.236 16.932 7.236C17.028 7.236 17.256 7.26 17.4 7.38C17.52 7.476 17.556 7.608 17.568 7.704C17.556 7.776 17.58 7.992 17.568 8.16Z"
-                    fill="#252420"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  class="footer-img"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
-                    fill="#252420"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  class="footer-img"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z"
-                    fill="#252420"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <!-- Bottom -->
-
-        <div class="footer-bottom">
-          <div class="footer-bottom-t">
-            <ul class="footer-links">
-              <li><a class="footer-link" href="#">Bosh sahifa</a></li>
-
-              <li><a class="footer-link" href="#">Kitoblar</a></li>
-              <li><a class="footer-link" href="#">Aksiyalar</a></li>
-              <li><a class="footer-link" href="#">Yangiliklar</a></li>
-              <li><a class="footer-link" href="#">Kontaktlar</a></li>
-            </ul>
-
-            <ul class="footer-links">
-              <li><a class="footer-link" href="#">Ilmiy nashrlar</a></li>
-              <li>
-                <a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a>
-              </li>
-              <li><a class="footer-link" href="#">Ma’rifiy nashrlar</a></li>
-              <li><a class="footer-link" href="#">Lug’atlar</a></li>
-              <li>
-                <a class="footer-link" href="#">Adabiy-badiiy nashrlar</a>
-              </li>
-              <li><a class="footer-link" href="#">Abituriyentlar uchun</a></li>
-              <li><a class="footer-link" href="#">Bolalar uchun</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-bottom-b">
-            <ul class="footer-links">
-              <li>
-                <a class="footer-link" href="#">Ko'p so'raladigan savollar</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">Yetkazib berish haqida</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#">To'lov usullari haqida</a>
-              </li>
-            </ul>
-
-            <ul class="footer-links">
-              <li><a class="footer-link" href="#">Bo’sh ish o’rinlari</a></li>
-              <li><a class="footer-link" href="#">Biz bilan bog’lanish</a></li>
-              <li><a class="footer-link" href="#">Maxfiylik nizomi</a></li>
-            </ul>
-          </div>
+        <h1 class="text-main" data-aos="fade-down" data-aos-duration="500">
+          Nega aynan<br /><br />
+          Akademnashr?
+        </h1>
+        <ul class="cards">
+          <li class="card" data-aos="fade-up-left" data-aos-duration="500">
+            <span class="circle">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.6809 2.35225C15.2807 0.858542 13.7453 -0.0278893 12.2516 0.372348C10.7579 0.772585 9.87148 2.30793 10.2717 3.80163L10.9964 6.50623C11.3967 7.99993 12.932 8.88636 14.4257 8.48612C15.9194 8.08589 16.8058 6.55054 16.4056 5.05684L15.6809 2.35225Z"
+                  fill="#FF7500"
+                />
+                <path
+                  d="M3.80151 10.2718C2.30781 9.8716 0.772463 10.758 0.372226 12.2517C-0.0280113 13.7454 0.858419 15.2808 2.35212 15.681L5.05672 16.4057C6.55042 16.806 8.08577 15.9195 8.486 14.4258C8.88624 12.9321 7.99981 11.3968 6.5061 10.9965L3.80151 10.2718Z"
+                  fill="#FF7500"
+                />
+                <path
+                  d="M28.4792 8.6803C29.5726 7.58684 29.5726 5.81398 28.4792 4.72051C27.3857 3.62704 25.6128 3.62704 24.5194 4.72051L22.5395 6.70041C21.446 7.79388 21.446 9.56674 22.5395 10.6602C23.6329 11.7537 25.4058 11.7537 26.4993 10.6602L28.4792 8.6803Z"
+                  fill="#FF7500"
+                />
+                <path
+                  d="M8.68018 28.4793L10.6601 26.4994C11.7536 25.4059 11.7536 23.6331 10.6601 22.5396C9.56662 21.4461 7.79375 21.4461 6.70028 22.5396L4.72039 24.5195C3.62692 25.613 3.62692 27.3858 4.72039 28.4793C5.81385 29.5728 7.58672 29.5728 8.68018 28.4793Z"
+                  fill="#FF7500"
+                />
+                <path
+                  d="M17.64 14.0004C16.6 13.5844 15.4122 13.8282 14.6202 14.6202C13.8282 15.4122 13.5844 16.6 14.0003 17.64L25.2003 45.64C25.6098 46.6638 26.582 47.3519 27.6837 47.3977C28.7854 47.4435 29.8114 46.8385 30.3045 45.8523L34.1671 38.127L42.6202 46.58C43.7136 47.6735 45.4865 47.6735 46.58 46.58C47.6735 45.4865 47.6735 43.7137 46.58 42.6202L38.1269 34.1672L45.8523 30.3045C46.8385 29.8114 47.4435 28.7854 47.3977 27.6837C47.3518 26.5821 46.6637 25.6099 45.64 25.2004L17.64 14.0004Z"
+                  fill="#FF7500"
+                />
+              </svg>
+            </span>
+            <h3 class="card-h">Oson buyurtma qilish</h3>
+            <p class="text-card">
+              Akademnashr.uz saytidan o’zingizga <br />
+              yoqqan kitobni sodda usulda buyurtma <br />
+              qila olasiz.
+            </p>
+          </li>
+          <li class="card" data-aos="fade-up-left" data-aos-duration="1500">
+            <span class="circle">
+              <svg
+                width="40"
+                height="52"
+                viewBox="0 0 40 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.6418 0.929542C24.8074 1.29696 25.6 2.37789 25.6 3.60001V17.6L36.8 17.6C37.8441 17.6 38.8014 18.1809 39.2835 19.1069C39.7657 20.033 39.6926 21.1504 39.0939 22.0057L19.4939 50.0057C18.793 51.0069 17.5238 51.4379 16.3582 51.0705C15.1926 50.7031 14.4 49.6221 14.4 48.4L14.4 34.4H3.2C2.15595 34.4 1.19862 33.8191 0.716462 32.8931C0.234308 31.967 0.307429 30.8496 0.906153 29.9943L20.5062 1.99431C21.207 0.993116 22.4762 0.562125 23.6418 0.929542Z"
+                  fill="#FF7500"
+                />
+              </svg>
+            </span>
+            <h3 class="card-h">Eng sara kitoblar</h3>
+            <p class="text-card">
+              Trenddagi eng ommabop, turli <br />
+              auditoriyalarga mo’ljallangan har xil <br />
+              janrdagi kitoblarni topa olasiz.
+            </p>
+          </li>
+          <li class="card" data-aos="fade-up-left" data-aos-duration="2000">
+            <span class="circle">
+              <svg
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.00001 0.599976C10.5464 0.599976 11.8 1.85358 11.8 3.39998V6.19998H14.6C16.1464 6.19998 17.4 7.45358 17.4 8.99998C17.4 10.5464 16.1464 11.8 14.6 11.8H11.8V14.6C11.8 16.1464 10.5464 17.4 9.00001 17.4C7.45361 17.4 6.20001 16.1464 6.20001 14.6V11.8H3.40001C1.85361 11.8 0.600006 10.5464 0.600006 8.99998C0.600006 7.45358 1.85361 6.19998 3.40001 6.19998H6.20001V3.39998C6.20001 1.85358 7.45361 0.599976 9.00001 0.599976ZM9.00001 28.6C10.5464 28.6 11.8 29.8536 11.8 31.4V34.2H14.6C16.1464 34.2 17.4 35.4536 17.4 37C17.4 38.5464 16.1464 39.8 14.6 39.8H11.8V42.6C11.8 44.1464 10.5464 45.4 9.00001 45.4C7.45361 45.4 6.20001 44.1464 6.20001 42.6V39.8H3.40001C1.85361 39.8 0.600006 38.5464 0.600006 37C0.600006 35.4536 1.85361 34.2 3.40001 34.2H6.20001V31.4C6.20001 29.8536 7.45361 28.6 9.00001 28.6Z"
+                  fill="#FF7500"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M28.5999 0.599976C29.8703 0.599976 30.9815 1.45533 31.3066 2.68348L34.6084 15.157L43.9991 20.5747C44.8658 21.0747 45.3999 21.9993 45.3999 23C45.3999 24.0006 44.8658 24.9252 43.9991 25.4253L34.6084 30.843L31.3066 43.3165C30.9815 44.5446 29.8703 45.4 28.5999 45.4C27.3294 45.4 26.2182 44.5446 25.8931 43.3165L22.5913 30.843L13.2008 25.4253C12.334 24.9252 11.8 24.0006 11.8 23C11.8 21.9993 12.334 21.0747 13.2008 20.5747L22.5913 15.157L25.8931 2.68348C26.2182 1.45533 27.3294 0.599976 28.5999 0.599976Z"
+                  fill="#FF7500"
+                />
+              </svg>
+            </span>
+            <h3 class="card-h">Tez yetkazib berish</h3>
+            <p class="text-card">
+              O’zbekistonning ixtiyoriy hududiga 3 ish <br />
+              kuni ichida, xalqaro buyurtmalarni 10 ish <br />
+              kuni ichida yetkazib beriladi.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--cta -->
+    <div class="cta container">
+      <div class="cta-content">
+        <div class="left-c">
+          <h2 class="cta-h" data-aos="zoom-out-right" data-aos-duration="1500">
+            Bolalar kitoblari <br />
+            uchun ajoyib aksiya!
+          </h2>
+          <p
+            class="cta-text"
+            data-aos="zoom-out-right"
+            data-aos-duration="1700"
+          >
+            Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish <br />
+            uchun turli mashq qo’llanmalari va komikslar.
+          </p>
+          <br />
+          <p class="cta-text" data-aos="zoom-out-left" data-aos-duration="1900">
+            Aksiyadagi eng katta to’plamda <span>50 ta kitob</span> ni
+            <span>350 ming</span> <br />
+            so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.
+          </p>
+          <a
+            href="#"
+            class="orange-button"
+            data-aos="zoom-out-right"
+            data-aos-duration="2100"
+            >Buyurtma berish</a
+          >
         </div>
       </div>
-    </footer>
-    <!-- AOS -->
+      <div class="right-c">
+        <img class="cta-img" src="./images/sale-img (1).jpg" alt="" />
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" style="display: none">
+      <div class="container">
+        <div class="top-footer" data-aos="flip-right" data-aos-duration="2500">
+          <img src="./asset/img/logo.svg" alt="" />
+          <ul class="icons">
+            <li>
+              <a href="#"></a>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0.5C18.3479 0.5 23.5 5.65214 23.5 12C23.5 18.3479 18.3479 23.5 12 23.5C5.65214 23.5 0.5 18.3479 0.5 12C0.5 5.65214 5.65214 0.5 12 0.5ZM16.9316 6.73633C16.6091 6.73639 16.2525 6.82413 15.6035 7.05957C14.9457 7.29821 13.9301 7.71076 12.2656 8.40527C11.6809 8.64641 10.8049 9.02019 9.6377 9.52344L5.27246 11.416C4.97483 11.5363 4.71435 11.6667 4.5166 11.8125C4.3334 11.9476 4.11116 12.1648 4.0752 12.4834C4.04778 12.7236 4.1163 12.9433 4.25781 13.1201C4.38452 13.2782 4.55254 13.3807 4.69824 13.4521C4.97603 13.5884 5.36923 13.6977 5.70996 13.8057V13.8066C6.0248 13.9116 6.39465 14.0236 6.74414 14.1113C7.08211 14.1962 7.43802 14.2665 7.71191 14.2744V14.2754L7.71289 14.2744L7.71387 14.2754V14.2744C8.24991 14.2907 8.78666 14.0582 9.30273 13.71L9.30371 13.7109C10.34 13.0125 11.2159 12.4236 11.9326 11.9443C11.7169 12.1457 11.5121 12.3388 11.333 12.5049L10.7344 13.0625L10.7314 13.0654C10.6526 13.1457 10.5715 13.2237 10.4873 13.3037C10.4053 13.3816 10.3173 13.4644 10.2363 13.5459C10.0823 13.7009 9.90134 13.8999 9.79688 14.1367C9.67725 14.408 9.66337 14.7173 9.8252 15.0264C9.9324 15.231 10.1045 15.412 10.3203 15.5791L10.5498 15.7422C11.0558 16.0755 11.4579 16.3491 11.8672 16.6279L13.2246 17.541C13.3834 17.646 13.5316 17.7541 13.6924 17.8682C13.8481 17.9787 14.0145 18.0938 14.1865 18.1943C14.5337 18.3971 14.9459 18.5648 15.4385 18.5225L15.4463 18.5215L15.4531 18.5205C16.0281 18.4542 16.4182 17.9793 16.626 17.2217L16.7031 16.8799C17.0493 15.0231 17.693 11.2472 17.9707 9.04492L18.0654 8.20703L18.0664 8.19531C18.0746 8.08045 18.0702 7.958 18.0674 7.87793C18.0658 7.8327 18.0647 7.80161 18.0645 7.77637C18.0644 7.77207 18.0644 7.76848 18.0645 7.76562L18.0732 7.71387L18.0645 7.6416C18.0451 7.48719 17.9781 7.20223 17.7119 6.98926H17.7109C17.5595 6.86622 17.3892 6.80721 17.2656 6.77734C17.1353 6.74589 17.0138 6.73633 16.9316 6.73633Z"
+                  fill="#252420"
+                  stroke="black"
+                />
+              </svg>
+            </li>
+            <li>
+              <a href="#"></a>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+                  fill="#252420"
+                />
+              </svg>
+            </li>
+            <li>
+              <a href="#">sss</a>
+
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z"
+                  fill="#252420"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <hr data-aos="zoom-in-right" data-aos-duration="2500" />
+        <div
+          class="bottom-footer"
+          data-aos="flip-left"
+          data-aos-duration="3000"
+        >
+          <ul class="footer-links">
+            <li>
+              <a href="#">Bosh sahifa</a>
+            </li>
+            <li>
+              <a href="#">Kitoblar</a>
+            </li>
+            <li>
+              <a href="#">Aksiyalar</a>
+            </li>
+            <li>
+              <a href="#">Yangiliklar</a>
+            </li>
+            <li>
+              <a href="#">Kontaktlar</a>
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li>
+              <a href="#">Ilmiy nashrlar</a>
+            </li>
+            <li>
+              <a href="#">Ilmiy-ommabop nashrlar</a>
+            </li>
+            <li>
+              <a href="#">Ma’rifiy nashrlar</a>
+            </li>
+            <li>
+              <a href="#">Lug’atlar</a>
+            </li>
+            <li>
+              <a href="#">Adabiy-badiiy nashrlar</a>
+            </li>
+            <li>
+              <a href="#">Abituriyentlar uchun</a>
+            </li>
+            <li>
+              <a href="#">Bolalar uchun</a>
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li>
+              <a href="#">Ko’p so’raladigan savollar</a>
+            </li>
+            <li>
+              <a href="#">Yetkazib berish haqida</a>
+            </li>
+            <li>
+              <a href="#">To’lov usullari haqida</a>
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li>
+              <a href="#"> Bo’sh ish o’rinlari </a>
+            </li>
+            <li>
+              <a href="#"> Biz bilan bog’lanish </a>
+            </li>
+            <li>
+              <a href="#"> Maxfiylik nizomi </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
