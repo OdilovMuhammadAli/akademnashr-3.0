@@ -32,6 +32,26 @@ a {
   padding: 12px 24px;
 }
 
+.orange-button-2 {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  background-color: #ff7500;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 24px;
+}
+
+.orange-button-3 {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  background-color: #ff7500;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 24px;
+}
+
 .orange-button:hover {
   background-color: #daa16f;
   color: #000000;
@@ -350,5 +370,11 @@ a {
 
   .footer img {
     margin: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .orange-button {
+    display: none;
   }
 }
