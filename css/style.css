@@ -155,6 +155,11 @@ a {
   color: white;
   background-color: black;
 }
+
+.right-c {
+  border-radius: 8px;
+}
+
 .cta-content {
   max-width: 440px;
   width: 100%;
